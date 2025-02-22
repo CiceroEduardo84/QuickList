@@ -1,0 +1,10 @@
+header {
+  width: 100%;
+
+  & img {
+    width: 7rem;
+    height: 2.5rem;
+    display: block;
+    margin: 1.5rem auto 0;
+  }
+}
