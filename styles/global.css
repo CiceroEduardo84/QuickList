@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-primary: #f4f5fb;
+  --background-secondary: #ffffff;
+
+  --color-brand: #ca3884;
+  --color-brand-hover: #a52c6b;
+  --color-dange: #c93847;
+
+  --content-primary: #080b12;
+  --content-secondary: #374151;
+  --content-tertiary: #9ca3af;
+
+  --border-primary: #d1d5db;
+  --border-hover: #b9c2d0;
+
+  --ff: "Inter", sans-serif;
+
+  --title: 700 1.5rem/2 var(--ff);
+  --label: 600 1/1.25 var(--ff);
+  --paragraph: 500 1/1.25 var(--ff);
+  --link: 500 0.825/1 var(--ff);
+}
+
+body {
+  max-width: 100%;
+  background-color: var(--background-primary);
+  color: var(--content-primary);
+  font: var(--paragraph);
+}
