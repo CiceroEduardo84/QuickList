@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista de compras</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Lista de compras</title>
+
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <img src="assets/img/logo.svg" alt="logo quicklist" />
+    </header>
+
+    <main>
+      <div>
+        <span>
+          &lt;
+          <p>Voltar</p>
+        </span>
+
+        <form>
+          <fieldset>
+            <legend>Compras da semana</legend>
+          </fieldset>
+          <fieldset>
+            <input type="text" name="item" id="item" />
+            <button>Adicionar item</button>
+          </fieldset>
+        </form>
+      </div>
+
+      <div>
+        <ul>
+          <li>
+            <input type="radio" />
+            <p>Bolacha</p>
+            <img src="" alt="" />
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <img src="" alt="" />
+        <p>O item foi removido da lista</p>
+        <img src="" alt="" />
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
