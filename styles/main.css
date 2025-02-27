@@ -26,11 +26,16 @@ main {
           height: 2.75rem;
           padding-inline: 1.125rem;
           background-color: var(--background-secondary);
+          outline: none;
           border: 2px solid var(--border-primary);
           font: var(--paragraph);
 
-          & input::placeholder {
+          &::placeholder {
             color: var(--content-tertiary);
+          }
+
+          &:focus {
+            border: 2px solid var(--color-brand);
           }
         }
 
@@ -41,6 +46,10 @@ main {
           background-color: var(--color-brand);
           color: var(--background-secondary);
           border: none;
+
+          &:hover {
+            background-color: var(--color-brand-hover);
+          }
         }
       }
     }
