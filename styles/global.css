@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
@@ -19,12 +22,12 @@
   --border-primary: #d1d5db;
   --border-hover: #b9c2d0;
 
-  --ff: "Inter", sans-serif;
+  --ff: "Inter", system-ui, sans-serif;
 
   --title: 700 1.5rem/2 var(--ff);
-  --label: 600 1/1.25 var(--ff);
-  --paragraph: 500 1/1.25 var(--ff);
-  --link: 500 0.825/1 var(--ff);
+  --label: 500 1rem/1.25 var(--ff);
+  --paragraph: 500 1rem/1.25 var(--ff);
+  --link: 500 0.825rem/1 var(--ff);
 }
 
 body {
@@ -32,4 +35,21 @@ body {
   background-color: var(--background-primary);
   color: var(--content-primary);
   font: var(--paragraph);
+
+  & > * {
+    max-width: 627px;
+    margin: auto;
+  }
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font: var(--title);
+}
+
+ul[role="list"] {
+  list-style: none;
 }
