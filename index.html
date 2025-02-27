@@ -6,51 +6,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
       rel="stylesheet"
     />
-
     <title>Lista de compras</title>
 
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
     <header>
-      <img src="assets/img/logo.svg" alt="logo quicklist" />
+      <img src="assets/logo.svg" alt="logo quicklist" />
     </header>
 
     <main>
-      <div>
-        <span>
-          &lt;
-          <p>Voltar</p>
-        </span>
+      <div class="containerForm">
+        <span> &LeftArrow; Voltar </span>
 
         <form>
-          <fieldset>
-            <legend>Compras da semana</legend>
-          </fieldset>
-          <fieldset>
-            <input type="text" name="item" id="item" />
-            <button>Adicionar item</button>
+          <legend>Compras da semana</legend>
+
+          <fieldset class="flex">
+            <input
+              type="text"
+              name="item"
+              id="item"
+              placeholder="Adicione um novo item"
+            />
+            <button type="submit">Adicionar item</button>
           </fieldset>
         </form>
       </div>
 
-      <div>
-        <ul>
+      <div class="containerList">
+        <ul role="list" class="flex">
           <li>
-            <input type="radio" />
-            <p>Bolacha</p>
-            <img src="" alt="" />
+            <input type="checkbox" name="item" value="Pão de forma" />
+            <p>Pão de forma</p>
+            <img src="assets/icons/delete.svg" alt="lixeira" />
+          </li>
+
+          <li>
+            <input type="checkbox" name="item" value="Café preto" />
+            <p>Café preto</p>
+            <img src="assets/icons/delete.svg" alt="lixeira" />
+          </li>
+
+          <li>
+            <input type="checkbox" name="item" value="Café preto" />
+            <p>Café preto</p>
+            <img src="assets/icons/delete.svg" alt="lixeira" />
+          </li>
+
+          <li>
+            <input type="checkbox" name="item" value="Café preto" />
+            <p>Café preto</p>
+            <img src="assets/icons/delete.svg" alt="lixeira" />
+          </li>
+
+          <li>
+            <input type="checkbox" name="item" value="Café preto" />
+            <p>Café preto</p>
+            <img src="assets/icons/delete.svg" alt="lixeira" />
+          </li>
+
+          <li>
+            <input type="checkbox" name="item" value="Café preto" />
+            <p>Café preto</p>
+            <img src="assets/icons/delete.svg" alt="lixeira" />
+          </li>
+
+          <li>
+            <input type="checkbox" name="item" value="Café preto" />
+            <p>Café preto</p>
+            <img src="assets/icons/delete.svg" alt="lixeira" />
           </li>
         </ul>
       </div>
 
-      <div>
-        <img src="" alt="" />
+      <div class="boxInfo">
+        <img src="assets/icons/info.svg" alt="" />
         <p>O item foi removido da lista</p>
-        <img src="" alt="" />
+        <img src="assets/icons/close.svg" alt="" />
       </div>
     </main>
     <script src="script.js"></script>
