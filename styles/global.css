@@ -53,3 +53,9 @@ legend {
 ul[role="list"] {
   list-style: none;
 }
+
+@media (max-width:767px) {
+  body{
+    padding: 2rem;
+  }
+}
